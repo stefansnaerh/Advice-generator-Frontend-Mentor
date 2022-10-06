@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 360px;
+  height: 400px;
+  background-color: #313A48;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.advice-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: aliceblue;
+  font-size: 24px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.advice-id {
+  color: #53FFAA;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+p {
+  color: aliceblue;
+}
+
+.button-container {
+  position: absolute;
+  top: 450px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #53FFAA;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-image: url("../public/images/icon-dice.svg");
+  height: 25px;
+  width: 25px;
+  border-style: none;
+  justify-self: center;
+}
+
+.circle {
+  background-image: url(../public/images/pattern-divider-mobile.svg);
+  height: 16px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 960px) {
+
+  .container {
+    width: 540px;
+    height: 380px;
+    margin-top: 200px;
+  }
+  .advice-text {
+    font-size: 28px;
+  }
+  .advice-id {
+    font-size: 14px;
+  }
+  .circle {
+    background-image: url(../public/images/pattern-divider-desktop.svg);
+    width: 450px;
+  }
+  .button-container {
+    top: 550px;
+  }
+}
